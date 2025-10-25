@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auréla Jewelry — Timeless Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Auréla</a>
+      <nav class="nav-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <form class="search" action="shop.html">
+          <input name="q" type="search" placeholder="Search jewelry" aria-label="Search jewelry">
+          <button type="submit" aria-label="Search" class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+        <a href="cart.html" class="cart-link" aria-label="View cart">
+          <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 5H19m-12 0a1 1 0 11-2 0 1 1 0 012 0zm12 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="carousel" id="hero-carousel" aria-label="Featured collections">
+        <div class="slides">
+          <div class="slide" style="--bg:url('https://www.jewelslane.com/cdn/shop/collections/390e29522d597c608f0d91088edf2ded.jpg?v=1755361799')">
+            <div class="slide-content">
+              <h1>Timeless Rings</h1>
+              <p>Handcrafted brilliance for every chapter.</p>
+              <div class="cta">
+                <a class="btn btn-primary" href="shop.html?category=Rings">Shop Rings</a>
+                <a class="btn" href="shop.html">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="--bg:url('https://static.vecteezy.com/system/resources/thumbnails/066/062/690/small_2x/elegant-diamond-necklace-adorned-with-intricate-gold-leaf-designs-showcased-on-a-soft-fabric-background-photo.jpeg')">
+            <div class="slide-content">
+              <h1>Necklaces that Whisper</h1>
+              <p>Elegance in every link and luster.</p>
+              <div class="cta">
+                <a class="btn btn-primary" href="shop.html?category=Necklaces">Shop Necklaces</a>
+                <a class="btn" href="about.html">Our Craft</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="--bg:url('https://images-cdn.ubuy.co.in/647b844a94dd79417d0de452-women-39-s-bracelet-bracelet.jpg')">
+            <div class="slide-content">
+              <h1>Sculpted Bracelets</h1>
+              <p>Modern silhouettes. Classic soul.</p>
+              <div class="cta">
+                <a class="btn btn-primary" href="shop.html?category=Bracelets">Shop Bracelets</a>
+                <a class="btn" href="contact.html">Visit Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide" style="--bg:url('https://i.pinimg.com/originals/53/f5/32/53f532040c655cdc32ae36509647390c.jpg')">
+            <div class="slide-content">
+              <h1>Earrings that Dazzle</h1>
+              <p>Grace in every glint and curve.</p>
+              <div class="cta">
+                <a class="btn btn-primary" href="shop.html?category=Earrings">Shop Earrings</a>
+                <a class="btn" href="shop.html">View All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" aria-label="Previous">‹</button>
+        <button class="carousel-btn next" aria-label="Next">›</button>
+        <div class="dots" role="tablist" aria-label="carousel dots"></div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <header class="section-header">
+        <h2>Featured Collections</h2>
+        <p>Curated pieces that define the season.</p>
+      </header>
+      <div class="collections">
+        <a class="collection-card shine" href="shop.html?category=Rings">
+          <img src="https://www.jewelslane.com/cdn/shop/collections/390e29522d597c608f0d91088edf2ded.jpg?v=1755361799" alt="Rings collection">
+          <div class="overlay"><span>Rings</span></div>
+        </a>
+        <a class="collection-card shine" href="shop.html?category=Necklaces">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/066/062/690/small_2x/elegant-diamond-necklace-adorned-with-intricate-gold-leaf-designs-showcased-on-a-soft-fabric-background-photo.jpeg" alt="Necklaces collection">
+          <div class="overlay"><span>Necklaces</span></div>
+        </a>
+        <a class="collection-card shine" href="shop.html?category=Bracelets">
+          <img src="https://images-cdn.ubuy.co.in/647b844a94dd79417d0de452-women-39-s-bracelet-bracelet.jpg" alt="Bracelets collection">
+          <div class="overlay"><span>Bracelets</span></div>
+        </a>
+        <a class="collection-card shine" href="shop.html?category=Earrings">
+          <img src="https://i.pinimg.com/originals/53/f5/32/53f532040c655cdc32ae36509647390c.jpg" alt="Earrings collection">
+          <div class="overlay"><span>Earrings</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <header class="section-header light">
+          <h2>What our clients say</h2>
+        </header>
+        <div class="quotes">
+          <blockquote>
+            “The craftsmanship is breathtaking — my ring catches every light.”
+            <cite>— Mira K.</cite>
+          </blockquote>
+          <blockquote>
+            “Understated luxury. I’ve never loved a bracelet more.”
+            <cite>— Alina S.</cite>
+          </blockquote>
+          <blockquote>
+            “Auréla made our moment unforgettable.”
+            <cite>— Daniel & Rue</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Auréla</div>
+        <p>Handcrafted jewelry with conscience and care.</p>
+      </div>
+      <div class="footer-note">
+        <p>© <span id="year"></span> Auréla Jewelry. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
