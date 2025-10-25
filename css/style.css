@@ -598,6 +598,86 @@ form button { margin-top: 8px; }
   .carousel-btn { width: 36px; height: 36px; font-size: 14px; }
 }
 
+/* ===== Contact Page ===== */
+.contact-page {
+  background: #2b001a;
+  color: #fefdfc;
+  padding: 60px 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form-box {
+  color:#ffd45c;
+  flex: 1;
+  min-width: 320px;
+  max-width: 550px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #040404;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #f5f2f2;
+}
+
+.contact-form textarea {
+  resize: none;
+  background: #040404;
+}
+
+.btn-send {
+  background: #d4a017;
+  border: none;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-send:hover {
+  background: #ffd45c;
+}
+
+.contact-info {
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+
+
+.contact-info h2 {
+  color: #ffd45c;
+  margin-bottom: 20px;
+}
+
 /* === Cart Page Layout Fix === */
 main.container {
   min-height: 70vh; /* ensures enough space before footer */
