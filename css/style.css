@@ -1,3 +1,7 @@
+/* =========================
+   LUXURY THEME MASTER CSS
+   ========================= */
+
 /* === Root Colors and Variables === */
 :root {
   --bg: #0e0e10;
@@ -142,6 +146,98 @@ body::before {
   transition: stroke 0.3s ease;
 }
 .search-btn:hover .icon-search { stroke: #000; }
+
+/* === Cart Button (Luxury Style) === */
+.cart-link {
+  position: relative;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--text);
+}
+
+.cart-link:hover {
+  background: var(--gold);
+  color: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Cart Icon */
+.icon-cart {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cart-link:hover .icon-cart {
+  transform: scale(1.15);
+}
+
+/* === Cart Button (Fixed and Styled) === */
+.cart-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+  z-index: 5; /* ensures clickability */
+  transition: all 0.3s ease;
+}
+
+.cart-link:hover {
+  background: var(--gold);
+  color: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* SVG icon styling */
+.icon-cart {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-link:hover .icon-cart {
+  transform: scale(1.15);
+  color: #1a1a1a;
+}
+
+/* Cart count badge */
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--gold);
+  color: #1a1a1a;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 6px;
+  line-height: 1;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cart-link:hover .cart-count {
+  background: #fff4cc;
+  color: #000;
+}
+
+
 
 /* === HERO CAROUSEL === */
 .hero { position: relative; }
@@ -502,10 +598,37 @@ form button { margin-top: 8px; }
   .carousel-btn { width: 36px; height: 36px; font-size: 14px; }
 }
 
+/* === Cart Page Layout Fix === */
+main.container {
+  min-height: 70vh; /* ensures enough space before footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 3rem;
+}
+
+/* Center the empty cart message nicely */
+.cart-table tbody:empty::before {
+  content: "Your cart is empty.";
+  display: block;
+  text-align: center;
+  color: #d9d9d9;
+  font-size: 1.1rem;
+  padding: 4rem 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Adjust summary alignment */
+.cart-summary {
+  text-align: right;
+  margin-top: 2rem;
+}
+
 /* Add breathing space between table and footer */
 .site-footer {
   margin-top: auto;
 }
+
 
 /* Page container */
 main.container {
