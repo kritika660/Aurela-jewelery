@@ -1,4 +1,47 @@
+/* Core runtime: navbar cart count, carousel, featured slider, shared helpers */
 (function() {
+  const CART_KEY = 'aurela_cart_v1';
+
+  // ===== CART MANAGEMENT =====
+  function getCart() {
+    try {
+      return JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    } catch {
+      return [];
+    }
+  }
+
+  function setCart(items) {
+    localStorage.setItem(CART_KEY, JSON.stringify(items));
+  }
+
+  function getCartCount() {
+    return getCart().reduce((sum, it) => sum + (it.quantity || 1), 0);
+  }
+
+  function updateCartBadge() {
+    const el = document.getElementById('cart-count') || document.querySelector('.cart-count');
+    if (!el) return;
+
+    const count = getCartCount();
+    el.textContent = String(count);
+
+    // Hide badge if empty
+    el.style.display = count === 0 ? 'none' : 'inline-block';
+  }
+
+  function addToCart(productId, quantity) {
+    const qty = Math.max(1, Number(quantity || 1));
+    const items = getCart();
+    const found = items.find(i => i.id === productId);
+    if (found) {
+      found.quantity = (found.quantity || 1) + qty;
+    } else {
+      items.push({ id: productId, quantity: qty });
+    }
+    setCart(items);
+    updateCartBadge();
+  }
 
   // Expose globally
   window.Aurela = { getCart, setCart, addToCart, getCartCount, CART_KEY };
@@ -146,6 +189,15 @@
     sliderTrack.addEventListener('mouseenter', stopAutoScroll);
     sliderTrack.addEventListener('mouseleave', startAutoScroll);
   }
+
+  // ===== ADD TO CART BUTTONS =====
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.add-to-cart');
+    if (!btn) return;
+    const productId = btn.dataset.id || btn.getAttribute('data-id') || 'unknown';
+    const qty = btn.dataset.qty || 1;
+    addToCart(productId, qty);
+  });
 
   // ===== CONTACT PAGE FORM HANDLER =====
   const contactForm = document.querySelector('.contact-form');
