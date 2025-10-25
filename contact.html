@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Auréla Jewelry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Auréla</a>
+      <nav class="nav-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <form class="search" action="shop.html">
+          <input name="q" type="search" placeholder="Search jewelry" aria-label="Search jewelry">
+          <button type="submit" aria-label="Search" class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+        <a href="cart.html" class="cart-link" aria-label="View cart">
+          <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 5H19m-12 0a1 1 0 11-2 0 1 1 0 012 0zm12 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-page">
+    <div class="contact-container">
+      <div class="contact-form-box">
+        <h2>Contact Us</h2>
+        <p>We’ll get back to you within 24 hours.</p>
+
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message..." rows="5" required></textarea>
+
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Visit Our Studio</h2>
+        <p><strong>Auréla Jewelry</strong><br>
+          24 MG Road, Bengaluru, Karnataka</p>
+
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> hello@aurela.in</p>
+
+        <p><strong>Open Hours:</strong><br>
+          Mon – Sat: 10:00 AM – 7:00 PM<br>
+          Sun: Closed</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Auréla</div>
+        <p>Handcrafted jewelry with conscience and care.</p>
+      </div>
+      <div class="footer-note">
+        <p>© <span id="year"></span> Auréla Jewelry. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>
