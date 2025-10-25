@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Auréla Jewelry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Auréla</a>
+      <nav class="nav-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <form class="search" action="shop.html">
+          <input name="q" type="search" placeholder="Search jewelry" aria-label="Search jewelry">
+          <button type="submit" aria-label="Search" class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon-search">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+        <a href="cart.html" class="cart-link" aria-label="View cart">
+          <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.4 5H19m-12 0a1 1 0 11-2 0 1 1 0 012 0zm12 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="section-header">
+      <h2>Our Story</h2>
+      <p>Origins, craftsmanship, and vision.</p>
+    </header>
+
+    <section class="stack">
+      <div class="card">
+        <div class="media"><img src="https://www.jewelslane.com/cdn/shop/collections/390e29522d597c608f0d91088edf2ded.jpg?v=1755361799" alt="workbench"></div>
+        <div class="body">
+          <h3>Crafted by Hand</h3>
+          <p>Every Auréla piece is sketched, cast, and hand-set by artisans who honor time-honed techniques. We believe in fewer, better things.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="media"><img src="https://static.vecteezy.com/system/resources/thumbnails/066/062/690/small_2x/elegant-diamond-necklace-adorned-with-intricate-gold-leaf-designs-showcased-on-a-soft-fabric-background-photo.jpeg" alt="vision"></div>
+        <div class="body">
+          <h3>Design for a Lifetime</h3>
+          <p>Our philosophy blends modern lines with classic forms for pieces that transcend trends and celebrate personal stories.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="media"><img src="https://images-cdn.ubuy.co.in/647b844a94dd79417d0de452-women-39-s-bracelet-bracelet.jpg" alt="atelier"></div>
+        <div class="body">
+          <h3>Materials with Meaning</h3>
+          <p>We source recycled metals and ethically lab-grown stones to reduce environmental impact without compromising brilliance.</p>
+        </div>
+      </div>
+      <div class="card">
+      <div class="media">
+        <img src="https://i.pinimg.com/originals/53/f5/32/53f532040c655cdc32ae36509647390c.jpg" alt="sparkle">
+      </div>
+      <div class="body">
+        <h3>Elegance in Every Spark</h3>
+        <p>Each gemstone is hand-selected for its brilliance, reflecting light — and the individuality — of its wearer.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="section-header">
+      <h2>Sustainability</h2>
+      <p>Responsible practices from studio to shipment.</p>
+    </section>
+    <ul>
+      <li>Recycled packaging with plastic-free fillers</li>
+      <li>Fair-wage atelier partners</li>
+      <li>Lifetime repair program</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">Auréla</div>
+        <p>Handcrafted jewelry with conscience and care.</p>
+      </div>
+      <div class="footer-note">
+        <p>© <span id="year"></span> Auréla Jewelry. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
